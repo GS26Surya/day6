@@ -6,7 +6,7 @@ class circle {
 
     setradius(radius) {
         if (radius) {
-            this._radius = radius;
+            this._radius =radius;
         } else {
             this._radius = 1;
         }
@@ -41,7 +41,7 @@ class circle {
     }
 }
 
-const circle1 = new circle();
+const circle1 = new circle(2,"blue");
 console.log(circle1);
 const radius1 = circle1.getarea();
 const circumference1 = circle1.getcircumference();
@@ -49,7 +49,7 @@ console.log(`${radius1}
 
 ${circumference1}`);
 
-const circle2 = new circle(8);
+const circle2 = new circle(8,"Green");
 const radius2 = circle2.getarea();
 const circumference2 = circle2.getcircumference();
 console.log(`${radius2}
